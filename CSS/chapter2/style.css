@@ -1,0 +1,78 @@
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1,h3{
+    color:brown;
+}
+h1,h3{
+    background-color:antiquewhite;
+}
+#login{
+  background-color:blue;
+}
+#signup{
+    color:red;
+}
+.a{
+    background-color: aqua;
+}
+
+.d a{
+    color:yellow;
+    background-color: black;
+}
+#heart{
+    color:red;
+}
+nav ul li a{
+    color:red;
+}
+nav ul li{
+    color:blue;
+}
+p+h3 {
+    text-decoration: underline;
+}
+.a+button{
+    background-color:cornflowerblue;
+    color: darkblue;
+}
+/* child combinator*/
+div>input{
+    background-color: aquamarine;
+}
+
+input[type="text"]{
+    color:brown;
+}
+input[type="password"]{
+    color:brown;
+}
+input[type]{
+    background-color:ghostwhite;
+}
+button:hover{
+    background-color: black;
+    color:white;
+}
+h3:hover{
+    text-decoration: overline;
+}
+input[type="radio"]:checked+label{
+    color:red;
+    font-weight: bold;
+}
+div:nth-of-type(2n){
+    background-color:aquamarine;
+}
+h1::first-letter{
+    color:black;
+}
+p::first-line{
+    color:purple;
+}
+p::selection{
+    background-color: lime;
+}

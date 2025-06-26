@@ -1,0 +1,46 @@
+#outerdiv{
+    height:200px;
+    width:70px;
+    border: 2px solid black;
+    margin :10px;
+}
+/* .a{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px soild black;
+    margin:10px;
+    background-color: red;
+}
+.b{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px soild black;
+    margin:10px;
+    background-color:yellow;
+}
+.c{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px soild black;
+    margin:10px;
+    background-color:green;
+} */
+.inner{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px soild ;
+    margin:10px;
+}
+#red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+#green{
+    background-color: green;
+}

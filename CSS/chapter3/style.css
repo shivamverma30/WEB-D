@@ -1,0 +1,32 @@
+/* *{
+    background-color: yellowgreen;
+} */
+div{
+    height: 200px;
+    width: 600px;
+    background-color: bisque;
+    border-width: 2px;
+    border-style: double;
+    border-color: black;
+    border-top: 5px double red ;
+    border-radius: 10px;
+     margin-left: 10px;
+     margin-bottom: 10px;
+}
+h1{
+    /* height: 30px;
+    width: 400px;
+    background-color: greenyellow;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: red; */
+    border: 2px dotted red;
+}
+button{
+    border: 2px black double;
+    border-radius:10px;
+    padding-left:25px;
+    padding-right:25px;
+    background-color: blanchedalmond;
+
+}

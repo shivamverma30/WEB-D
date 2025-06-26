@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Js </title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px 20px;
+        min-height: 100vh;
+    }
+
+    .container {
+        background: #fff;
+        padding: 25px 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        width: 100%;
+        max-width: 450px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+    }
+
+    .input-group {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+        flex: 1;
+        padding: 12px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 12px 16px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        padding: 12px 10px;
+        font-size: 1rem;
+        background-color: #fafafa;
+        border-bottom: 2px solid #e0e0e0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        transition: background-color 0.2s ease;
+    }
+
+    li:hover {
+        background-color: #f0f0f0;
+    }
+
+    .delete {
+        background-color: #e74c3c;
+        color: white;
+        padding: 6px 10px;
+        border: none;
+        border-radius: 6px;
+        font-size: 0.9rem;
+    }
+
+    .delete:hover {
+        background-color: #c0392b;
+    }
+
+    @media (max-width: 480px) {
+        .input-group {
+            flex-direction: column;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <h2>Todo App</h2> <br><br>
+    <input type="text" placeholder="add your task">
+    <br><br>
+    <button>Add Task</button>
+    <ul>
+        <li>Eat <button class="delete">Delete</button></li>
+        <li>Sleep <button class="delete">Delete</button></li>
+    </ul>
+
+    <script>
+        let btn = document.querySelector("button");
+        let ul = document.querySelector("ul");
+        let inp = document.querySelector("input");
+        btn.addEventListener("click",function(){
+            let item = document.createElement("li");
+            item.innerText=inp.value;
+
+            let dltBtn = document.createElement("button");
+            dltBtn.innerText="delete";
+            dltBtn.classList.add("delete");
+
+            item.appendChild(dltBtn);
+            ul.appendChild(item);
+            inp.value="";
+        });
+
+
+        ul.addEventListener("click",function(event){
+            if(event.target.nodeName=="BUTTON"){
+                let listItem = event.target.parentElement;
+                listItem.remove();
+                console.log("item deleted")
+            }
+        });
+
+        // let dltbtns =document.querySelectorAll(".delete");
+        // for (delBtn of dltbtns){
+        //     delBtn.addEventListener("click", function(){
+        //         let par =this.parentElement;
+        //         par.remove();
+        //         // this remove is not work for adding new element only work on already extising elements (to remove this using event bubblig methid we apply to this parents in this parent so if child is add then parent parapety apply on them )
+        //     });
+        // }
+
+    </script>
+</body>
+</html>

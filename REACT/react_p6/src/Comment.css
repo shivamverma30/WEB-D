@@ -1,0 +1,9 @@
+.comment {
+    border: 3px solid yellow ;
+    padding: 12px;
+    border-radius: 14px;
+    background-color: aqua;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+}

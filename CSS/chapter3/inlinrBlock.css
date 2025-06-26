@@ -1,0 +1,31 @@
+/* div{
+    height:200px;
+    width:200px;
+    background-color: greenyellow;
+    border:2px solid black;
+    margin :5px;
+    display: inline-block;
+} */
+/* #outer{
+    height: 400px;
+    width: 400px;
+    background:blueviolet;
+    font-size:70px;
+    margin:40px;
+}
+#inner{
+    height: 10%;
+    width: 20%;
+    background:red;
+    font-size:0.2em; 
+    margin:20%
+} */
+section{
+    font-size: 15px;
+}
+div{
+    font-size: 2em;
+}
+div{
+    font-size: 2rem;
+}

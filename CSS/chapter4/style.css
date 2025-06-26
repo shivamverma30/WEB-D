@@ -1,0 +1,22 @@
+div{
+    height:100px;
+    width: 100px;
+    background-color: rgba(255, 0,0, 0.3);
+    /* margin:0 auto; */
+    margin-top: 20px;
+    /* transition-duration: 3; */
+    transition: margin-left 2s ease-in-out 0.2s;
+}
+/* #opicity{
+    background-color: rgba(255, 400,0, 1);
+    opacity: 0.8;
+}
+h3{     
+    color:red;
+    opacity: 0.;
+} */
+div:hover{
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 400px;
+}
